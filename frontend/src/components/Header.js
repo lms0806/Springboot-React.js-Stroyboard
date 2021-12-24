@@ -87,6 +87,11 @@ const Header = () => {
             </Link>
           </Form>
         </Navbar.Collapse>
+        {isLogin ? (
+          <h3 style={{ color: 'gray' }}>{user.username}</h3>
+        ) : (
+          <h2 style={{ color: 'gray' }}>로그인X</h2>
+        )}
       </Navbar>
       <br />
     </div>
